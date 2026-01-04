@@ -300,28 +300,38 @@ header a {
 }
 /* --- RESPONSIVE LAYOUT --- */
 @media (max-width: 768px) {
-  /* Header: Ajuste de identidad */
-  .contenedor-header {
-    flex-direction: row; /* Mantiene logo y hamburguesa en la misma línea */
-    justify-content: space-between;
-    padding: 0.8rem;
+  /* Ocultamos la navegación por defecto en móvil */
+  .navegacion {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
   }
 
-  /* Footer: Columnas a una sola fila */
-  .footer-sitio .contenedor-footer {
-    display: grid;
-    grid-template-columns: 1fr; /* Todo en una sola columna */
-    text-align: center;
-    gap: 2rem;
+  /* Cuando el menú está activo (vía JS) */
+  .navegacion.activo {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 1rem 0;
   }
 
-  .lista-redes {
-    justify-content: center;
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
-}
-main {
-  width: 90%; /* En lugar de 100%, para dejar aire a los costados */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 0;
+
+  /* Mostramos el botón de hamburguesa */
+  .boton-menu {
+    display: block !important;
+  }
 }
