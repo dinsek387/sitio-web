@@ -1,0 +1,30 @@
+FACULTAD DE OBSTETRICIA - UNICA
+MALLA CURRICULAR 2021
+
+SEMESTRE I (Primer Año)
+│
+├─ BIO-101: Biología Celular (4 créditos, 4 horas/semana)
+├─ QUI-101: Química General (3 créditos, 3 horas/semana)
+├─ ANA-101: Anatomía Humana I (4 créditos, 5 horas/semana)
+├─ OBS-101: Introducción a Obstetricia (2 créditos, 2 horas/semana)
+└─ COM-101: Computación Básica (2 créditos, 2 horas/semana)
+   Total: 15 créditos
+
+SEMESTRE II (Primer Año)
+│
+├─ BIO-102: Biología Tisular (4 créditos, 4 horas/semana)
+├─ QUI-102: Química Orgánica (3 créditos, 3 horas/semana)
+├─ FIS-101: Fisiología Humana (4 créditos, 5 horas/semana)
+└─ INF-101: Informática Aplicada (2 créditos, 2 horas/semana)
+   Total: 13 créditos
+
+[Continuación de semestres III-X en estructura similar]
+
+DISTRIBUCIÓN DE CRÉDITOS:
+- Área Básica: 36 créditos
+- Área Profesional: 84 créditos
+- Área Complementaria: 18 créditos
+- Total Programa: 138 créditos
+
+Vigencia: 2021 - 2025
+Próxima revisión: 2026

@@ -1,0 +1,327 @@
+/* ================================
+   LAYOUT.CSS
+   Estructura general del sitio
+   ================================ */
+
+/* CONTENEDORES GENERALES */
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+.header-sitio {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--gris-claro);
+  z-index: 1000;
+}
+
+.contenedor-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* IDENTIDAD */
+.identidad {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.identidad img {
+  width: 48px;
+  height: auto;
+}
+
+.texto-identidad {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-identidad .universidad {
+  font-size: 0.85rem;
+  color: var(--texto-secundario);
+}
+
+.texto-identidad .facultad {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-principal);
+}
+
+/* NAVEGACIÓN */
+.navegacion {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menu a {
+  font-weight: 500;
+  color: var(--texto-principal);
+}
+
+.menu a:hover {
+  color: var(--color-principal);
+}
+
+/* BOTÓN AULA VIRTUAL */
+.acceso-rapido .boton-aula {
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.acceso-rapido .boton-aula:hover {
+  background-color: var(--color-principal-oscuro);
+  text-decoration: none;
+}
+
+/* BOTÓN HAMBURGUESA (OCULTO EN DESKTOP) */
+.boton-menu {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--color-principal);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer-sitio {
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  padding-top: 3rem;
+}
+
+.contenedor-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer-columna h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--blanco);
+}
+
+.footer-columna p,
+.footer-columna a {
+  font-size: 0.9rem;
+  color: var(--blanco);
+}
+
+.footer-columna a:hover {
+  text-decoration: underline;
+}
+
+/* LISTAS FOOTER */
+.footer-columna ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* PARTE LEGAL */
+.footer-legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 900px) {
+
+  /* HEADER */
+
+  .boton-menu {
+    display: block;
+  }
+
+  /* FOOTER */
+  .contenedor-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  /* FOOTER */
+  .contenedor-footer {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+header a {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.header-sitio {
+  padding: 0.7rem 0;
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-sitio.compacto {
+  padding: 0.5rem 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+
+/* 1. Fuera del media query (Escritorio) */
+.boton-menu {
+  display: none; /* Oculto en PC */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-principal);
+}
+
+/* 2. Configuración para Móvil */
+@media (max-width: 900px) {
+  .boton-menu {
+    display: block; /* Aparece el botón */
+  }
+
+  .navegacion {
+    /* Posicionamiento */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    z-index: 1000;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    
+    /* ANIMACIÓN: Quitamos el display: none y usamos esto */
+    display: block; 
+    max-height: 0; 
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none; /* Evita clics accidentales si está invisible */
+  }
+
+  .navegacion.activo {
+    max-height: 600px; /* Suficiente para mostrar todos los enlaces */
+    opacity: 1;
+    pointer-events: auto;
+    padding: 1rem 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+/* Estilo para el enlace de la página activa */
+.menu a.actual {
+  color: var(--color-principal); /* El color guinda de tu facultad */
+  font-weight: 700;
+  position: relative;
+}
+
+/* Opcional: Una línea debajo del enlace activo (solo en escritorio) */
+@media (min-width: 901px) {
+  .menu a.actual::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-principal);
+  }
+}
+
+/* En móvil, podemos darle un fondo ligero */
+@media (max-width: 900px) {
+  .menu a.actual {
+    background-color: rgba(var(--color-principal-rgb), 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* --- AJUSTE DE CABECERA --- */
+@media (max-width: 480px) {
+  .texto-identidad .universidad {
+    font-size: 0.8rem; /* Reducimos un poco el texto para que no choque */
+  }
+  .texto-identidad .facultad {
+    font-size: 0.9rem;
+  }
+  .identidad img {
+    width: 40px; /* Logo ligeramente más pequeño en móviles */
+  }
+}
+/* --- RESPONSIVE LAYOUT --- */
+@media (max-width: 768px) {
+  /* Header: Ajuste de identidad */
+  .contenedor-header {
+    flex-direction: row; /* Mantiene logo y hamburguesa en la misma línea */
+    justify-content: space-between;
+    padding: 0.8rem;
+  }
+
+  /* Footer: Columnas a una sola fila */
+  .footer-sitio .contenedor-footer {
+    display: grid;
+    grid-template-columns: 1fr; /* Todo en una sola columna */
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .lista-redes {
+    justify-content: center;
+  }
+}
+main {
+  width: 90%; /* En lugar de 100%, para dejar aire a los costados */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}

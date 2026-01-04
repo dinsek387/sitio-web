@@ -1,0 +1,66 @@
+FACULTAD DE OBSTETRICIA - UNICA
+MANUAL DE ORGANIZACIÓN Y FUNCIONES (MOF)
+
+I. ESTRUCTURA ORGANIZACIONAL
+
+DECANATO
+├─ Decano(a): Dra. Rosa Elvira Ruiz Reyes
+│  Funciones:
+│  - Dirección y administración de la facultad
+│  - Representación ante organismos superiores
+│  - Aprobación de proyectos académicos
+│  - Gestión de recursos humanos y materiales
+│
+├─ DIRECCIÓN DE ESCUELA
+│  Director(a): Mg. Obst. Luz María Gutiérrez Rosario
+│  Funciones:
+│  - Coordinar actividades académicas
+│  - Supervisar calidad educativa
+│  - Evaluar desempeño docente
+│  - Gestionar horarios y asignaciones
+│
+├─ DEPARTAMENTO ACADÉMICO
+│  Director(a): Lic. Obst. Dra. Bertha Curi Chávez
+│  Funciones:
+│  - Diseño curricular
+│  - Calidad académica
+│  - Revisión de silabos
+│  - Evaluación académica
+│
+└─ UNIDAD DE INVESTIGACIÓN
+   Director(a): Mg. Obst. Yuly Rosario Blanco Chávez
+   Funciones:
+   - Promoción de investigación
+   - Gestión de proyectos
+   - Asesoramiento en tesis
+   - Publicación de resultados
+
+II. DEPENDENCIAS ADMINISTRATIVAS
+
+✓ Secretaría
+✓ Centro de Cómputo
+✓ Biblioteca
+✓ Laboratorios
+✓ Consultorios Clínicos
+
+III. RESPONSABILIDADES GENERALES
+
+Docentes:
+- Cumplimiento de carga horaria
+- Preparación de materiales
+- Evaluación justa y objetiva
+- Participación en gestión
+
+Personal Administrativo:
+- Atención al usuario
+- Gestión documentaria
+- Mantenimiento de registros
+- Apoyo a procesos académicos
+
+IV. HORARIOS Y DISPONIBILIDAD
+
+Lunes a Viernes: 8:00 a 15:30 horas
+Atención a estudiantes: 10:00 a 12:00 horas
+
+Vigencia: 2024-2025
+Próxima actualización: 2025

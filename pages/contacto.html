@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | Obstetricia</title>
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+
+</head>
+
+<body>
+
+  <header class="header-sitio">
+
+    <div class="contenedor-header">
+
+      <!-- IDENTIDAD -->
+      <div class="identidad">
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/logo-oficial.png" alt="Universidad Nacional San Luis Gonzaga">
+        </a>
+
+        <div class="texto-identidad">
+          <span class="universidad">
+            Universidad Nacional "San Luis Gonzaga"
+          </span>
+          <span class="facultad">
+            Facultad de Obstetricia
+          </span>
+        </div>
+      </div>
+
+      <!-- BOTÓN HAMBURGUESA (MÓVIL) -->
+      <button 
+        class="boton-menu"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal">
+        ☰
+      </button>
+
+      <!-- NAVEGACIÓN -->
+      <nav id="menu-principal" class="navegacion">
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="la-carrera.html">La Carrera</a></li>
+          <li><a href="formacion-academica.html">Formación Académica</a></li>
+          <li><a href="la-facultad.html">La Facultad</a></li>
+          <li><a href="vida-universitaria.html">Vida Universitaria</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- ACCESO DESTACADO -->
+      <div class="acceso-rapido">
+        <a 
+          href="https://aulavirtual.unica.edu.pe"
+          target="_blank"
+          class="boton-aula">
+          Aula Virtual
+        </a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="pagina-contacto">
+
+    <!-- ENCABEZADO / BIENVENIDA -->
+    <section class="encabezado-pagina">
+      <h1>Contáctanos</h1>
+      <p>
+        Estamos para ayudarte. Si tienes alguna consulta, sugerencia o deseas
+        comunicarte con la Facultad de Obstetricia, puedes hacerlo a través de
+        los siguientes medios.
+      </p>
+    </section>
+
+    <!-- DATOS DE CONTACTO -->
+    <section class="datos-contacto">
+      <h2>Datos de Contacto</h2>
+
+      <div class="bloques-contacto">
+
+        <div class="bloque">
+  <h3 class="titulo-bloque">
+    <span class="icono">
+      <img src="../assets/images/icons/phone.svg" alt="">
+    </span>
+    Teléfonos
+  </h3>
+  <p>Teléfono general: (056) 284399</p>
+  <p>Teléfono facultad: (056) 761152</p>
+</div>
+
+<div class="bloque">
+  <h3 class="titulo-bloque">
+    <span class="icono">
+      <img src="../assets/images/icons/envelope.svg" alt="">
+    </span>
+    Correos Electrónicos
+  </h3>
+  <p>
+    Mesa de partes:
+    <a href="mailto:mesadepartes@unica.edu.pe">
+      mesadepartes@unica.edu.pe
+    </a>
+  </p>
+  <p>
+    Facultad de Obstetricia:
+    <a href="mailto:obstetricia@unica.edu.pe">
+      obstetricia@unica.edu.pe
+    </a>
+  </p>
+</div>
+
+<div class="bloque">
+  <h3 class="titulo-bloque">
+    <span class="icono">
+      <img src="../assets/images/icons/clock.svg" alt="">
+    </span>
+    Horario de Atención
+  </h3>
+  <p>Lunes a viernes</p>
+  <p>8:00 a.m. – 3:30 p.m.</p>
+</div>
+
+
+      </div>
+    </section>
+
+    <!-- CANALES RÁPIDOS / REDES -->
+    <section class="canales-rapidos">
+      <h2>Canales Rápidos</h2>
+
+      <p>
+        También puedes mantenerte en contacto con nosotros a través de
+        nuestras plataformas digitales.
+      </p>
+
+      <div class="iconos-canales">
+  <a href="#" class="red-social facebook" aria-label="Facebook">
+    <img src="../assets/images/icons/facebook.svg" alt="Facebook">
+    Facebook
+  </a>
+
+  <a href="#" class="red-social instagram" aria-label="Instagram">
+    <img src="../assets/images/icons/instagram.svg" alt="Instagram">
+    Instagram
+  </a>
+
+  <a href="#" class="red-social youtube" aria-label="YouTube">
+    <img src="../assets/images/icons/youtube.svg" alt="YouTube">
+    YouTube
+  </a>
+
+  <a href="https://aulavirtual.unica.edu.pe" target="_blank" class="red-social aula">
+      <img src="../assets/images/icons/academic-cap.svg" alt="">
+    Aula Virtual
+  </a>
+</div>
+
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contacto-grid">
+    <div class="formulario-contacto">
+      <h2>Formulario de Contacto</h2>
+
+      <p>
+        Completa el siguiente formulario y nos pondremos en contacto contigo
+        a la brevedad posible.
+      </p>
+
+      <form action="#" method="post" class="formulario">
+
+        <div class="campo-formulario">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto">
+        </div>
+
+        <div class="campo-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">
+          Enviar mensaje
+        </button>
+
+      </form>
+    </div>
+
+    <!-- UBICACIÓN Y MAPA -->
+    <div class="ubicacion">
+      <h2>Ubicación</h2>
+
+      <p>
+        La Facultad de Obstetricia forma parte de la Universidad Nacional
+        San Luis Gonzaga, ubicada en la ciudad de Ica.
+      </p>
+
+      <div class="bloques-ubicacion">
+        <div class="direccion">
+          <p><strong>Ciudad Universitaria:</strong> Av. Los Maestros s/n, Ica</p>
+          <p><strong>Local Central:</strong> Calle Bolívar 232, Ica</p>
+          <p><strong>Rectorado:</strong> Ayabaca C-9, Urb. San José, Ica</p>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d684.0922121735861!2d-75.73471742541989!3d-14.088394302600976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110fd003587aafb%3A0xd59b81ab1a093e4!2sFacultad%20de%20Obstetricia%20-%20UNICA!5e0!3m2!1ses-419!2spe!4v1765897586920!5m2!1ses-419!2spe" 
+            width="452" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer-sitio">
+
+    <div class="contenedor-footer">
+
+      <!-- COLUMNA 1: IDENTIDAD INSTITUCIONAL -->
+      <div class="footer-columna identidad-footer">
+        <h3>Facultad de Obstetricia</h3>
+        <p>
+          Universidad Nacional<br>
+          “San Luis Gonzaga”
+        </p>
+        <p>
+          Ica – Perú
+        </p>
+      </div>
+
+      <!-- COLUMNA 2: ENLACES RÁPIDOS -->
+      <div class="footer-columna enlaces-footer">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="la-carrera.html">La Carrera</a></li>
+          <li><a href="formacion-academica.html">Formación Académica</a></li>
+          <li><a href="vida-universitaria.html">Vida Universitaria</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMNA 3: CONTACTO -->
+      <div class="footer-columna contacto-footer">
+        <h3>Contacto</h3>
+        <p>📍 Ciudad Universitaria, Ica</p>
+        <p>📞 (056) 284399</p>
+        <p>
+          ✉️ <a href="mailto:obstetricia@unica.edu.pe">
+            obstetricia@unica.edu.pe
+          </a>
+        </p>
+        <p>⏰ Lun - Vie: 8:00 a.m. – 3:30 p.m.</p>
+      </div>
+
+      <!-- COLUMNA 4: REDES Y ACCESOS -->
+      <div class="footer-columna redes-footer">
+        <h3>Conéctate</h3>
+        <ul class="lista-redes">
+          <li><a href="#" aria-label="Facebook">🌐 Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">📸 Instagram</a></li>
+          <li><a href="#" aria-label="YouTube">▶️ YouTube</a></li>
+          <li>
+            <a 
+              href="https://aulavirtual.unica.edu.pe"
+              target="_blank">
+              🎓 Aula Virtual
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- DERECHOS DE AUTOR -->
+    <div class="footer-legal">
+      <p>
+        © 2025 Facultad de Obstetricia – UNICA.
+        Todos los derechos reservados.
+      </p>
+    </div>
+
+  </footer>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
